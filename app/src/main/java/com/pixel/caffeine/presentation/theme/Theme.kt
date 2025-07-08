@@ -1,4 +1,4 @@
-package com.pixel.caffeine.ui.theme
+package com.pixel.caffeine.presentation.theme
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
