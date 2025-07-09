@@ -28,7 +28,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.BlurredEdgeTreatment
 import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.blur
+import androidx.compose.ui.draw.dropShadow
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.shadow.Shadow
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
@@ -37,6 +39,7 @@ import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.DpOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
@@ -142,7 +145,19 @@ private fun HomeContent(
             onClick = onNavigateToCoffeePicker,
             colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF1F1F1F)),
             contentPadding = PaddingValues(horizontal = 32.dp, vertical = 16.dp),
-            modifier = Modifier.align(Alignment.CenterHorizontally).padding(bottom = 50.dp),
+            modifier =
+                Modifier
+                    .align(Alignment.CenterHorizontally)
+                    .padding(bottom = 50.dp)
+                    .dropShadow(
+                        shape = ButtonDefaults.shape,
+                        shadow =
+                            Shadow(
+                                radius = 12.dp,
+                                offset = DpOffset(0.dp, 6.dp),
+                                color = Color.Black.copy(alpha = 0.24f),
+                            ),
+                    ),
         ) {
             Text(
                 text = stringResource(R.string.bring_my_coffee),

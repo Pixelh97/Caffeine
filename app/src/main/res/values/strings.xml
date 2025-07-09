@@ -6,4 +6,9 @@
     <string name="star">Star</string>
     <string name="coffee_ghost">coffee ghost</string>
     <string name="bring_my_coffee">bring my coffee</string>
+    <string name="tx_continue">Continue</string>
+    <string name="latte">Latte</string>
+    <string name="macchiato">Macchiato</string>
+    <string name="black">Black</string>
+    <string name="espresso">Espresso</string>
 </resources>
