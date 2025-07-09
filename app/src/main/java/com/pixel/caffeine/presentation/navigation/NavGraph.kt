@@ -20,7 +20,7 @@ fun NavGraph(
 ) {
     NavHost(navController = navController, startDestination = Screen.Home) {
         composable<Screen.Home> {
-            HomeScreen(modifier = modifier)
+            HomeScreen(navController = navController, modifier = modifier)
         }
         composable<Screen.CoffeePicker> {
             CoffeePickerScreen(modifier = modifier)
