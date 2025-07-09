@@ -1,5 +1,6 @@
 package com.pixel.caffeine.presentation.navigation
 
+import com.pixel.caffeine.presentation.screens.coffeePicker.CoffeeCup
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -11,7 +12,7 @@ sealed class Screen {
     object CoffeePicker : Screen()
 
     @Serializable
-    object CupCustomization : Screen()
+    data class CupCustomization(val coffeeCup: CoffeeCup) : Screen()
 
     @Serializable
     object PreparingOrder : Screen()
