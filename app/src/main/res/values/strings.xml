@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Caffeine</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="add_button">Add button</string>
+    <string name="welcome_message">Hocus\nPocus\nI Need Coffee\nto Focus</string>
+    <string name="star">Star</string>
+    <string name="coffee_ghost">coffee ghost</string>
+    <string name="bring_my_coffee">bring my coffee</string>
 </resources>
