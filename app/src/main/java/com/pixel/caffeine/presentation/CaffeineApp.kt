@@ -1,4 +1,4 @@
-package com.pixel.caffeine.presentation.theme
+package com.pixel.caffeine.presentation
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
@@ -11,6 +11,7 @@ import androidx.navigation.NavDestination
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.pixel.caffeine.presentation.navigation.NavGraph
+import com.pixel.caffeine.presentation.theme.CaffeineTheme
 
 @Composable
 fun CaffeineApp() {
